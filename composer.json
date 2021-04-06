@@ -11,13 +11,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Caveofx\\AdminTheme\\": "src/"
+      "Caveofx\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Caveofx\\AdminTheme\\ThemeServiceProvider"
+        "Caveofx\\ThemeServiceProvider"
       ]
     }
   },

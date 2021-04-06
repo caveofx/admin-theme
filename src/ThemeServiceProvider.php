@@ -1,6 +1,6 @@
 <?php
 
-namespace Caveofx\AdminTheme;
+namespace Caveofx;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Nova;
