@@ -20,5 +20,5 @@ composer require caveofx/admin-theme
 
 Publish and edit configuration file (**Optional**)
 ```bash
-php artisan vendor:publish --provider="Caveofx\ThemeServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Caveofx\ThemeServiceProvider" --tag="public"
 ```
