@@ -1,6 +1,6 @@
 <?php
 
-namespace Caveofx\Admin;
+namespace Caveofx\AdminTheme;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Nova;
@@ -12,14 +12,13 @@ class ThemeServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         Nova::booted(function () {
-            Nova::theme(asset('/caveofx/admin/theme.css'));
+            Nova::theme(asset('/caveofx/admin-theme/theme.css'));
         });
 
         $this->publishes([
-            __DIR__.'/../resources/css' => public_path('caveofx/admin'),
+            __DIR__ . '/../resources/css' => public_path('caveofx/admin-theme'),
         ], 'public');
     }
 
@@ -28,8 +27,7 @@ class ThemeServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
+    public function register() {
         //
     }
 }
